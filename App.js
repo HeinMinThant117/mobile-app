@@ -1,9 +1,13 @@
 import React from 'react';
-import RepositoryList from './components/RepositoryList';
+import AppBar from './src/components/AppBar';
+import RepositoryList from './src/components/RepositoryList';
 
 
 const App = () => {
-	return <RepositoryList />;
+	return <>
+	<AppBar />
+	<RepositoryList />
+	</>;
 };
 
 export default App;

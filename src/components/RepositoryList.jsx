@@ -1,5 +1,4 @@
 import React from "react";
-import Constants from 'expo-constants';
 import { FlatList, View, StyleSheet } from "react-native";
 import RepositoryItem from "./RepositoryItem";
 
@@ -7,9 +6,6 @@ const styles = StyleSheet.create({
   separator: {
     height: 10,
   },
- container: {
-		marginTop: Constants.statusBarHeight
-	}
 });
 
 
@@ -69,7 +65,7 @@ const RepositoryList = () => {
 		<RepositoryItem repo={item} />
 	);
 
-  return <FlatList style={styles.container} data={repositories} renderItem={renderItem} keyExtractor={repo => repo.id} ItemSeparatorComponent={ItemSeparator} />;
+  return <FlatList data={repositories} renderItem={renderItem} keyExtractor={repo => repo.id} ItemSeparatorComponent={ItemSeparator} />;
 
 };
 
