@@ -65,7 +65,7 @@ const RepositoryList = () => {
 		<RepositoryItem repo={item} />
 	);
 
-  return <FlatList data={repositories} renderItem={renderItem} keyExtractor={repo => repo.id} ItemSeparatorComponent={ItemSeparator} />;
+  return <FlatList style={{backgroundColor: '#e1e4e8'  }} data={repositories} renderItem={renderItem} keyExtractor={repo => repo.id} ItemSeparatorComponent={ItemSeparator} />;
 
 };
 
